@@ -1,0 +1,108 @@
+$bg-color: #080808;
+$card-bg: #121212;
+$accent-green: #48a100;
+$text-main: #ffffff;
+$text-muted: #a1a1aa;
+$font-mono: 'Courier New', Courier, monospace;
+$font-sans: system-ui, -apple-system, sans-serif;
+
+body {
+  background-color: $bg-color;
+  color: $text-main;
+  font-family: $font-mono;
+}
+
+.nav-links a {
+  color: $text-muted;
+  text-decoration: none;
+  font-size: 0.85rem;
+  margin-right: 1.5rem;
+  transition: color 0.2s;
+
+  &:hover {
+    color: $text-main;
+  }
+}
+
+.social-links a {
+  color: $text-muted;
+  text-decoration: none;
+  font-size: 0.9rem;
+
+  &:hover {
+    color: $text-main;
+  }
+}
+
+.hero-title {
+  font-family: $font-sans;
+  font-size: 2.75rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.hero-subtitle {
+  font-size: 1.1rem;
+  color: $text-muted;
+  margin-top: 0.25rem;
+  margin-bottom: 2rem;
+}
+
+.hero-description {
+  font-size: 0.925rem;
+  color: $text-muted;
+  line-height: 1.7;
+  max-width: 580px;
+  margin-bottom: 2rem;
+}
+
+.avatar-img {
+  width: 100%;
+  max-width: 360px;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.btn-accent {
+  display: inline-block;
+  background-color: $accent-green;
+  color: $text-main;
+  text-decoration: none;
+  font-family: $font-mono;
+  font-weight: bold;
+  font-size: 0.875rem;
+  padding: 0.85rem 1.75rem;
+  border-radius: 6px;
+  transition: opacity 0.2s;
+
+  &:hover {
+    opacity: 0.9;
+  }
+}
+
+.tech-section {
+  margin-top: 3.5rem;
+}
+
+.tech-label {
+  font-size: 0.875rem;
+  color: $text-muted;
+}
+
+.tech-card {
+  background-color: transparent;
+  border: 1px solid #222222;
+  border-radius: 8px;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    max-height: 24px;
+    max-width: 100%;
+    filter: brightness(0) invert(1);
+    opacity: 0.8;
+  }
+}
